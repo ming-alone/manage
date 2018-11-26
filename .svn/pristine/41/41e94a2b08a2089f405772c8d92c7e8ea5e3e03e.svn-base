@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="http://images.i7391.com/images/i7391.ico" />
+    <link rel="stylesheet" href="//jscdn.i7391.com/zui/1.8.0/zui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/lib/datagrid/zui.datagrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/lib/board/zui.board.min.css">
+    <link rel="stylesheet" href="/css/public.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="ajax_loading" class="hidden">
+        <i class="icon icon-spin icon-spinner-snake icon-3x"></i>
+    </div>
+    <div id="datagridPageExample" class="datagrid">
+        <section class="page-top-toolbar">
+            <div class="pull-left">
+                <button data-link="/admin/group_add" class="power tool-button">
+                    <i class="icon-plus text-primary"></i>
+                    <span>管理員新增</span>
+                </button>
+                <button data-link="/admin/group_delete" class="power tool-button">
+                    <i class="icon-minus text-danger"></i>
+                    <span>管理員刪除</span>
+                </button>
+            </div>
+            <div class="search-from pull-right search-box">
+                <input type="search" class="form-control search-control" placeholder="請輸入想要搜尋的關鍵字">
+                <button class="search-button">
+                    <i class="icon icon-search"></i>
+                </button>
+            </div>
+        </section>
+        <article class="page-content">
+            <div class="datagrid-container"></div>
+            <div class="pager block"></div>
+        </article>
+    </div>
+    <script type="text/javascript" src="//jscdn.i7391.com/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="/js/seajs-cfg.js"></script>
+    <script>
+        seajs.use('main', function (m) {
+            m.init();
+        });
+    </script>
+</body>
+
+</html>

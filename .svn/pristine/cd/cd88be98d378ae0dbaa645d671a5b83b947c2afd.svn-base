@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <META NAME="keywords" CONTENT="后台管理">
+        <META NAME="description" CONTENT="后台管理">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+        <link rel="icon" type="image/x-icon" href="http://images.i7391.com/images/i7391.ico" />
+        <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/zui/1.8.1/css/zui.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <title>扫码登入 - i7391 CMS 后台</title>
+    </head>
+
+    <body class="login-body">
+        <!-- PAGE -->
+        <section>
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div id="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- LOGIN -->
+            <section class="visible">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="login-box-plain">
+                                <h2 class="bigintro">后台管理 登录</h2>
+                                <div class="divide-40"></div>
+                                <iframe id="iframeLogin" class="center-block" src="" frameborder="0" scrolling="no" width="450" height="400"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/LOGIN -->
+        </section>
+        <script type="text/javascript" src="//jscdn.i7391.com/seajs/2.3.0/sea.js"></script>
+        <script type="text/javascript" src="/js/seajs-cfg.js"></script>
+        <script>seajs.use('main.js', function (m) {m.init('login.js');});</script>
+    </body>
+</html>

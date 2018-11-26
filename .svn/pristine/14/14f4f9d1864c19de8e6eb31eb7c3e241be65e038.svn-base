@@ -1,0 +1,122 @@
+define(function (require, exports, module) {
+    'use strict';
+
+    var psl, DOMAIN_SITE, API_TOOLS_SITE;
+
+    var workWeChatAgentid, workWeChatReturnUrl;
+
+    var _DEVELOPER = seajs.data.vars._DEVELOPER;
+
+    switch (seajs.data.vars._ENV) {
+        case 0:
+            psl = '.i7391.com/';
+            workWeChatAgentid = '1000004';
+            workWeChatReturnUrl = 'http://manageweb.i7391.com/';
+            API_TOOLS_SITE = 'http://api-tools.i7391.com/';
+            break;
+        case -1:
+            psl = '.7391test.com/';
+            switch (_DEVELOPER) {
+                case 'qiujm':
+                    API_TOOLS_SITE = 'http://tools.lik.7391test.com/';
+                    workWeChatAgentid = '1000011';
+                    workWeChatReturnUrl = 'http://manageweb.qiujm.7391test.com/';
+                    break;
+                case 'lik':
+                    API_TOOLS_SITE = 'http://tools.lik.7391test.com/';
+                    workWeChatAgentid = '1000002';
+                    workWeChatReturnUrl = 'http://manageweb.lik.7391test.com/';
+                    break;
+            }
+            break;
+        case -2:
+            psl = '.7391test.com/';
+            workWeChatAgentid = '1000005';
+            workWeChatReturnUrl = 'http://manageweb.7391test.com/';
+            API_TOOLS_SITE = 'http://api-tools.7391test.com/';
+            break;
+    }
+
+    console.log(API_TOOLS_SITE);
+
+    exports.WORK_WECHAT_AGENTID = workWeChatAgentid;
+    exports.WORK_WECHAT_RETURN_URL = workWeChatReturnUrl + 'login_cb.html';
+    exports.DOMAIN_SITE = psl.slice;
+
+    exports.API_TOOLS_SITE = API_TOOLS_SITE;
+
+    exports.REQUEST_URL = {
+        LOGIN: API_TOOLS_SITE + 'passport/work_wechat_callback.html',
+        LOGOUT: API_TOOLS_SITE + 'passport/logout.html',
+        UPLOAD: API_TOOLS_SITE + 'i7391_CMS/common/upload.html',
+        MENU_LIST: API_TOOLS_SITE + 'common/get_menu_list.html',
+        GROUP_LIST: API_TOOLS_SITE + 'admin/group_list.html',
+        GROUP_ADD: API_TOOLS_SITE + 'admin/group_add.html',
+        GROUP_EDIT: API_TOOLS_SITE + 'admin/group_edit.html',
+        GROUP_DELETE: API_TOOLS_SITE + 'admin/group_delete.html',
+        GET_GROUP_INFO: API_TOOLS_SITE + 'admin/group_edit.html?action=getGroupInfo',
+        JQ_GET_DATA: API_TOOLS_SITE + 'admin/group_authority_edit.html?action=jqGetData',
+        GROUP_AUTHORITY_EIDT: API_TOOLS_SITE + 'admin/group_authority_edit.html',
+        ADMIN_LIST: API_TOOLS_SITE + 'admin/admin_list.html',
+        ADMIN_ADD: API_TOOLS_SITE + 'admin/admin_add.html',
+        ADMIN_EDIT: API_TOOLS_SITE + 'admin/admin_edit.html',
+        ADMIN_DELETE: API_TOOLS_SITE + 'admin/admin_delete.html',
+        ADMIN_WX_BIND: API_TOOLS_SITE + 'wxqr/admin_bind.html',
+        ADMIN_WX_UNBIND: API_TOOLS_SITE + 'admin/wx_unbind.html',
+        GET_ADMIN_INFO: API_TOOLS_SITE + 'admin/admin_edit.html?action=getAdminInfo',
+        GET_GROUP_LIST: API_TOOLS_SITE + 'admin/admin_add.html?action=getGroupList',
+
+
+
+        BANNER_LOGIN_LIST: API_TOOLS_SITE + 'i7391_CMS/banner_pc/banner_login_list.html',
+        BANNER_LOGIN_ADD: API_TOOLS_SITE + 'i7391_CMS/banner_pc/banner_login_add.html',
+        BANNER_LOGIN_EDIT: API_TOOLS_SITE + 'i7391_CMS/banner_pc/banner_login_edit.html',
+        BANNER_LOGIN_DELETE: API_TOOLS_SITE + 'i7391_CMS/banner_pc/banner_login_delete.html',
+        GET_BANNER_INFO: API_TOOLS_SITE + 'i7391_CMS/banner_pc/banner_login_edit.html?action=getBannerInfo',
+        BANNER_LOGIN_FOOTER_LIST: API_TOOLS_SITE + 'i7391_CMS/banner_pc/banner_login_footer_list.html',
+        BANNER_LOGIN_FOOTER_ADD: API_TOOLS_SITE + '/i7391_CMS/banner_pc/banner_login_footer_add.html',
+        BANNER_LOGIN_FOOTER_EDIT: API_TOOLS_SITE + '/i7391_CMS/banner_pc/banner_login_footer_edit.html',
+        BANNER_LOGIN_FOOTER_DELETE: API_TOOLS_SITE + '/i7391_CMS/banner_pc/banner_login_footer_delete.html',
+        GET_FOOTER_INFO: API_TOOLS_SITE + 'i7391_CMS/banner_pc/banner_login_footer_edit.html?action=getBannerInfo',
+        CAROUSEL_LIST: API_TOOLS_SITE + 'i7391_CMS/carousel/carousel_list.html',
+        CAROUSEL_ADD: API_TOOLS_SITE + 'i7391_CMS/carousel/carousel_add.html',
+        CAROUSEL_EDIT: API_TOOLS_SITE + 'i7391_CMS/carousel/carousel_edit.html',
+        CAROUSEL_DELETE: API_TOOLS_SITE + 'i7391_CMS/carousel/carousel_delete.html',
+        GET_CAROUSEL_INFO: API_TOOLS_SITE + 'i7391_CMS/carousel/carousel_edit.html?action=getCarouselInfo',
+        GAME_LIST: API_TOOLS_SITE + 'i7391_CMS/game/game_list.html',
+        GAME_ADD: API_TOOLS_SITE + 'i7391_CMS/game/game_add.html',
+        GAME_EDIT: API_TOOLS_SITE + 'i7391_CMS/game/game_edit.html',
+        GAME_DELETE: API_TOOLS_SITE + 'i7391_CMS/game/game_detele.html',
+        GET_GAME_INFO: API_TOOLS_SITE + 'i7391_CMS/game/game_edit.html?action=getGameInfo',
+        POINTCARD_LIST: API_TOOLS_SITE + 'i7391_CMS/pointcard/pointcard_list.html',
+        POINTCARD_ADD: API_TOOLS_SITE + 'i7391_CMS/pointcard/pointcard_add.html',
+        POINTCARD_EDIT: API_TOOLS_SITE + 'i7391_CMS/pointcard/pointcard_edit.html',
+        POINTCARD_DELETE: API_TOOLS_SITE + 'i7391_CMS/pointcard/pointcard_delete.html',
+        GET_POINTCARD_INFO: API_TOOLS_SITE + 'i7391_CMS/pointcard/pointcard_edit.html?action=getPointcardInfo',
+        MOBILEGAME_LIST: API_TOOLS_SITE + 'i7391_CMS/mobilegame/mobilegame_list.html',
+        MOBILEGAME_ADD: API_TOOLS_SITE + 'i7391_CMS/mobilegame/mobilegame_add.html',
+        MOBILEGAME_EDIT: API_TOOLS_SITE + 'i7391_CMS/mobilegame/mobilegame_edit.html',
+        MOBILEGAME_DELETE: API_TOOLS_SITE + 'i7391_CMS/mobilegame/mobilegame_delete.html',
+        GET_MOBILEGAME_INFO: API_TOOLS_SITE + 'i7391_CMS/mobilegame/mobilegame_edit.html?action=getMobileGameInfo',
+        GOODS_LIST: API_TOOLS_SITE + 'i7391_CMS/goods/goods_list.html',
+        GOODS_ADD: API_TOOLS_SITE + 'i7391_CMS/goods/goods_add.html',
+        GOODS_EDIT: API_TOOLS_SITE + 'i7391_CMS/goods/goods_edit.html',
+        GOODS_DELETE: API_TOOLS_SITE + 'i7391_CMS/goods/goods_detele.html',
+        GET_GOODS_INFO: API_TOOLS_SITE + 'i7391_CMS/goods/goods_edit.html?action=getGoodsInfo',
+        GOODS_PC_LIST: API_TOOLS_SITE + 'i7391_CMS/goods_pc/goods_list.html',
+        GOODS_PC_ADD: API_TOOLS_SITE + 'i7391_CMS/goods_pc/goods_add.html',
+        GOODS_PC_EDIT: API_TOOLS_SITE + 'i7391_CMS/goods_pc/goods_edit.html',
+        GOODS_PC_DELETE: API_TOOLS_SITE + 'i7391_CMS/goods_pc/goods_detele.html',
+        GET_GOODS_PC_INFO: API_TOOLS_SITE + 'i7391_CMS/goods_pc/goods_edit.html?action=getGoodsInfo',
+
+        GET_RECORD: API_TOOLS_SITE + '8591/contrast/game_contrast.html?action=getRecord',
+        GAME_CONTRAST: API_TOOLS_SITE + '8591/contrast/game_contrast.html',
+        GET_ALLGAME_DATA: API_TOOLS_SITE + 'i7391_API/getdata/get_allgame_data.html',
+        GET_GAMETYPE_DATA: API_TOOLS_SITE + 'i7391_API/getdata/get_gametype_data',
+        GET_RATE: API_TOOLS_SITE + 'i7391_API/getdata/get_rate.html',
+        GET_CARD_CATEGORY: API_TOOLS_SITE + 'i7391_API/getdata/get_card_category.html',
+        GET_CARD_POINT: API_TOOLS_SITE + 'i7391_API/getdata/get_card_point.html',
+
+        CLEAN_DATA: 'http://117.27.250.72:8081/_clean/res.php'
+    }
+})

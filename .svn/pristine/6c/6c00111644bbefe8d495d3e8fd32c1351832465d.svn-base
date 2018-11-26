@@ -1,0 +1,172 @@
+define(function (require, exports, module) {
+
+    'use strict';
+
+    var $ = require('jquery');
+    require('zui');
+    require('lib/zui.datagrid.min');
+    require('chosen');
+    var siteCfg = require('config/config');
+    var siteFun = require('config/function');
+
+    var pub = {}
+
+    pub.init = function () {
+        ajax_get_game_contrast_list();
+        ajax_get_game_contrast();
+    }
+
+    var ajax_get_game_contrast_list = function () {
+        get_game_contrast_list(table_render);
+    }
+
+    /*獲取記錄列表 */
+    var get_game_contrast_list = function (callbackFun) {
+        $.ajax({
+            type: 'GET',
+            url: siteCfg.REQUEST_URL.GET_RECORD,
+            dataType: 'json',
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain: true,
+            success: function (returnData) {
+                if (returnData.data == undefined || returnData.data == '') {
+                    siteFun.show_error_tip('沒有資料');
+                    return false;
+                } else {
+                    if ($.isFunction(callbackFun)) {
+                        callbackFun(returnData);
+                    }
+                }
+            }
+        })
+    }
+    /*獲取記錄列表 */
+
+    /*表格渲染 */
+    var table_render = function (returnData) {
+        var data = returnData.data;
+        var html = "<option value=''></option>";
+        for (var i = 0; i < data.length; i++) {
+            html += '<option value=' + data[i].Id + '>' + data[i].CreateTime + '</option>';
+        }
+        $('select.chosen-select').html(html);
+        $('select.chosen-select').chosen({
+            lang: 'zh_cn',
+            no_results_text: '沒有找到',
+            disable_search_threshold: 10,
+            search_contains: true
+        });
+    }
+
+    /*表格渲染 */
+    var ajax_get_game_contrast = function () {
+        $(document).on('click', 'a[href="/8591/contrast/game_contrast"]', function () {
+            var newId = $('#newSelect').val();
+            var oldId = $('#oldSelect').val();
+            get_game_contrast(newId, oldId, game_contrast_modal, siteFun.show_error_tip)
+        })
+    }
+
+    /*遊戲對比 */
+    var get_game_contrast = function (newId, oldId, callbackFun, errorFunction) {
+        var getData = {
+            newId: newId,
+            oldId: oldId
+        }
+        $.ajax({
+            type: 'GET',
+            url: siteCfg.REQUEST_URL.GAME_CONTRAST,
+            dataType: 'json',
+            data: getData,
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain: true,
+            success: function (returnData) {
+                if (returnData.status === true) {
+                    if ($.isFunction(callbackFun)) {
+                        callbackFun(returnData);
+                    }
+                } else {
+                    if ($.isFunction(errorFunction)) {
+                        errorFunction(returnData.info);
+                    }
+                }
+
+            }
+        })
+    }
+    /*遊戲對比 */
+
+    /*對比結果 */
+    var game_contrast_modal = function (returnData) {
+        game_contrast_data(returnData);
+    }
+    /*對比結果 */
+
+    var game_contrast_data = function (returnData) {
+        $('tbody').html();
+        var data = returnData.data;
+        console.log(data);
+        var addGameData = data.addGameData;
+        var reduceGameData = data.reduceGameData;
+        var changeGameData = data.changeGameData;
+        var addTd = '';
+        var reduceTd = '';
+        var changeTd = '';
+        for (var i = 0; i < addGameData.length; i++) {
+            var span = subMenu(addGameData[i].serverData || []);
+            addTd += '<tr><td>' + addGameData[i].GameId + '</td><td>' + addGameData[i].GameName + '</td><td>' + span + '</td></tr>';
+        }
+        for (var i = 0; i < reduceGameData.length; i++) {
+            var span = subMenu(reduceGameData[i].serverData || []);
+            reduceTd += '<tr><td>' + reduceGameData[i].GameId + '</td><td>' + reduceGameData[i].GameName + '</td><td>' + span + '</td></tr>';
+        }
+        for (var i = 0; i < changeGameData.length; i++) {
+            var addSpan = subSelect(changeGameData[i].addServerData || []);
+            var reduceSpan = subSelect(changeGameData[i].reduceServerData || []);
+            changeTd += '<tr><td>' + changeGameData[i].gameName + '</td><td>' + addSpan + '</td><td>' + reduceSpan + '</td></tr>';
+        }
+        $('#addPanel').html(addTd);
+        $('#reducePanel').html(reduceTd);
+        $('#changePanel').html(changeTd);
+    }
+
+    /*遊戲名稱提示 */
+    var show_game_tooltip = function () {
+        $(document).on('mouseover', '.gameName', function () {
+            $(this).tooltip('destroy');
+            var html = $(this).html();
+            $('.gameName').tooltip({
+                container: '#triggerModal',
+                placement: 'top',
+                html: html
+            });
+            $(this).tooltip('show', html);
+        })
+    }
+    /*遊戲名稱提示 */
+
+    var subSelect = function (data) {
+        var span = "";
+        for (var x in data) {
+            span += '<span>' + data[x].name + '&nbsp;&nbsp;&nbsp;&nbsp;' + '</span>';
+        }
+        return span;
+    }
+
+    var subMenu = function (data) {
+        var span = "";
+        for (var i = 0; i < data.length; i++) {
+            span += '<span>' + data[i] + '&nbsp;&nbsp;&nbsp;&nbsp;' + '</span>';
+            if ((i + 1) % 6 == 0) {
+                span += '<br>';
+            }
+        }
+        return span;
+    }
+
+    module.exports = pub;
+})

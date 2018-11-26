@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="http://images.i7391.com/images/i7391.ico" />
+    <link rel="stylesheet" href="//jscdn.i7391.com/zui/1.8.0/zui.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/lib/datagrid/zui.datagrid.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/lib/chosen/chosen.min.css">
+
+    <link rel="stylesheet" href="/css/public.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="ajax_loading" class="hidden">
+        <i class="icon icon-spin icon-spinner-snake icon-3x"></i>
+    </div>
+    <div class="container-fluid" style="padding-top:10px;">
+        <select style="width:200px;display: inline-block" data-placeholder="新紀錄" class="chosen-select form-control"
+            tabindex="2" id="newSelect">
+        </select>
+        <select style="width:200px;display: inline-block" data-placeholder="舊記錄" class="chosen-select form-control"
+            tabindex="2" id="oldSelect">
+        </select>
+        <a href="/8591/contrast/game_contrast" class="power btn" type="button">
+            <i class="icon icon-hand-left"></i>對比
+        </a>
+        <ul style="margin-top:10px;" class="nav nav-tabs">
+            <li class="active"><a href="###" data-target="#tab2Content1" data-toggle="tab">增加的遊戲資訊</a></li>
+            <li><a href="###" data-target="#tab2Content2" data-toggle="tab">減少的遊戲資訊</a></li>
+            <li><a href="###" data-target="#tab2Content3" data-toggle="tab">改變的遊戲資訊</a></li>
+        </ul>
+        <div class="tab-content" style="font-size: 1.4rem;">
+            <div class="tab-pane fade active in" id="tab2Content1">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        增加的遊戲資訊
+                    </div>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>遊戲ID</th>
+                                <th>遊戲名稱</th>
+                                <th>伺服器</th>
+                            </tr>
+                        </thead>
+                        <tbody id="addPanel"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab2Content2">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        減少的遊戲資訊
+                    </div>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>遊戲ID</th>
+                                <th>遊戲名稱</th>
+                                <th>伺服器</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reducePanel"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab2Content3">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        改變的遊戲資訊
+                    </div>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>遊戲名稱</th>
+                                <th>增加的伺服器</th>
+                                <th>減少的伺服器</th>
+                            </tr>
+                        </thead>
+                        <tbody id="changePanel"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//jscdn.i7391.com/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="/js/seajs-cfg.js"></script>
+    <script>
+        seajs.use('main', function (m) {
+            m.init();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="http://images.i7391.com/images/i7391.ico" />
+    <link rel="stylesheet" href="//jscdn.i7391.com/zui/1.8.0/zui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/zui/1.8.1/lib/uploader/zui.uploader.min.css">
+    <link rel="stylesheet" href="/css/public.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="ajax_loading" class="hidden">
+        <i class="icon icon-spin icon-spinner-snake icon-3x"></i>
+    </div>
+    <article class="page-content">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                文件上传
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-2">
+                        <div style="border: 1px solid #ddd; padding: 10px">
+                            <div class="switch text-left">
+                                <input id="gamePic" type="checkbox">
+                                <label>游戏</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div style="border: 1px solid #ddd; padding: 10px">
+                            <div class="switch text-left">
+                                <input id="cardPic" type="checkbox">
+                                <label>点卡/产包</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row" style="position: relative;overflow: hidden">
+                    <div id="uploader" class="uploader" data-ride="uploader" data-url="your/file/upload/url">
+                        <div class="col-sm-12">
+                            <div class="uploader-message text-center">
+                                <div class="content"></div>
+                                <button type="button" class="close">×</button>
+                            </div>
+                            <div class="uploader-files file-list file-list-lg" data-drag-placeholder="请拖拽文件到此处"></div>
+                            <div class="uploader-actions">
+                                <div class="uploader-status pull-right text-muted"></div>
+                                <button type="button" class="btn btn-link uploader-btn-browse">
+                                    <i class="icon icon-plus"></i> 选择文件
+                                </button>
+                                <!-- <button type="button" class="btn btn-link uploader-btn-start">
+                                            <i class="icon icon-cloud-upload"></i> 开始上传
+                                        </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <div style="margin-top:15px;border: 1px solid #ddd; padding: 10px">
+                            <button id="chooseImg" class="btn btn-primary btn-block">
+                                选择文件
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <div style="border: 1px solid #ddd; padding: 10px">
+                            <a id="uploaderStart" class="btn btn-primary btn-block" href="javascript:;">
+                                上传图档
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script type="text/javascript" src="//jscdn.i7391.com/seajs/2.3.0/sea.js"></script>
+    <script type="text/javascript" src="/js/seajs-cfg.js"></script>
+    <script>
+    seajs.use('main', function(m) {
+        m.init();
+    });
+    </script>
+</body>
+
+</html>

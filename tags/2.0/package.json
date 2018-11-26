@@ -1,0 +1,17 @@
+{
+  "name": "manageweb.i7391.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-seajs-concat": "^1.0.5",
+    "gulp-seajs-transport": "^0.4.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

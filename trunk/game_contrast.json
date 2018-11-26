@@ -1,0 +1,555 @@
+{
+  "status": true,
+  "info": "对比成功",
+  "data": {
+    "reduceGameData": [
+      {
+        "GameId": 29586,
+        "GameName": "OVERKILL's The Walking Dead",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 27181,
+        "GameName": "饑荒聯機版 Don't Starve Together﻿",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 29915,
+        "GameName": "無人深空 No Man\\'s Sky",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 24364,
+        "GameName": "文明帝國系列 Sid Meier's Civilization",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 24521,
+        "GameName": "King's Raid",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 28043,
+        "GameName": "信長之野望 創造Nobunaga's Ambition: Souzou",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31480,
+        "GameName": "老人之旅 Old Man\\'s Journey",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 28473,
+        "GameName": "Atelier Lydie &amp; Suelle - Bonus DLCｓ",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 30378,
+        "GameName": "即插即玩 Plug &amp; Play﻿",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 27735,
+        "GameName": "The Tribez &amp; Castlez",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 28535,
+        "GameName": "Otaku's Fantasy 2",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 30161,
+        "GameName": "騎馬與砍殺:戰團 Mount &amp; Blade: Warband",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 30376,
+        "GameName": "戴上耳機跑步去 Melody\\'s Escape﻿",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 28863,
+        "GameName": "Fabulous - Angela's Wedding Disaster",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 28518,
+        "GameName": "紅色警戒 3 Command &amp; Conquer: Red Alert 3",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 26917,
+        "GameName": "My Cafe: Recipes &amp; Stories",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 24666,
+        "GameName": "Deal or No Deal - Noel\\'s Quiz",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 30584,
+        "GameName": "決鬥傳說 Let's Duel",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 30084,
+        "GameName": "Monaco: What\\'s Yours Is Mine",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 25578,
+        "GameName": "百鬼物語(Summoner\\'s Tales)",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 25466,
+        "GameName": "Smash &amp; Magic",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 27561,
+        "GameName": "藍精靈村 Smurfs\\' Village",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31235,
+        "GameName": "JOJO\\'s PITTER-PATTER POP",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 23725,
+        "GameName": "BRAVELY DEFAULT FAIRY'S EFFECT",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 24390,
+        "GameName": "英雄與將軍Heroes & Generals",
+        "serverData": [
+          "steam"
+        ]
+      }
+    ],
+    "addGameData": [
+      {
+        "GameId": 29586,
+        "GameName": "OVERKILL\\'s The Walking Dead",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 27181,
+        "GameName": "饑荒聯機版 Don\\'t Starve Together﻿",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 29915,
+        "GameName": "無人深空 No Man\\\\\\'s Sky",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 24521,
+        "GameName": "King\\'s Raid",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 28043,
+        "GameName": "信長之野望 創造Nobunaga\\'s Ambition: Souzou",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 24364,
+        "GameName": "文明帝國系列 Sid Meier\\'s Civilization",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31480,
+        "GameName": "老人之旅 Old Man\\\\\\'s Journey",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31700,
+        "GameName": "Thief Simulator",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31747,
+        "GameName": "天翼之鍊 M",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31716,
+        "GameName": "落日飆神 Sunset Overdrive",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 28473,
+        "GameName": "Atelier Lydie &amp;amp; Suelle - Bonus DLCｓ",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31730,
+        "GameName": "拼圖之星 BT21",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 30378,
+        "GameName": "即插即玩 Plug &amp;amp; Play﻿",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31744,
+        "GameName": "Hot Slide",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 27735,
+        "GameName": "The Tribez &amp;amp; Castlez",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31713,
+        "GameName": "探索者記：迷城奇案",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31727,
+        "GameName": "瘋狂火箭",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 28535,
+        "GameName": "Otaku\\'s Fantasy 2",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 30376,
+        "GameName": "戴上耳機跑步去 Melody\\\\\\'s Escape﻿",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 28863,
+        "GameName": "Fabulous - Angela\\'s Wedding Disaster",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31741,
+        "GameName": "Bad North",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 30161,
+        "GameName": "騎馬與砍殺:戰團 Mount &amp;amp; Blade: Warband",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31709,
+        "GameName": "永恆：宿命起源﻿",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 28518,
+        "GameName": "紅色警戒 3 Command &amp;amp; Conquer: Red Alert 3",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 30584,
+        "GameName": "決鬥傳說 Let\\'s Duel",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 26917,
+        "GameName": "My Cafe: Recipes &amp;amp; Stories",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31724,
+        "GameName": "我是傳奇 -傳奇來了",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 24666,
+        "GameName": "Deal or No Deal - Noel\\\\\\'s Quiz",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31739,
+        "GameName": "河洛群俠傳",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 30084,
+        "GameName": "Monaco: What\\\\\\'s Yours Is Mine",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 25578,
+        "GameName": "百鬼物語(Summoner\\\\\\'s Tales)",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31706,
+        "GameName": "皇家競技場",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 25466,
+        "GameName": "Smash &amp;amp; Magic",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31721,
+        "GameName": "武動仙緣",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31736,
+        "GameName": "人生贏家",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 27561,
+        "GameName": "藍精靈村 Smurfs\\\\\\' Village",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31235,
+        "GameName": "JOJO\\\\\\'s PITTER-PATTER POP",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 23725,
+        "GameName": "BRAVELY DEFAULT FAIRY\\'S EFFECT",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31703,
+        "GameName": "台戰天下",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31750,
+        "GameName": "瑪奇 Mobile",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 24390,
+        "GameName": "英雄與將軍Heroes &amp; Generals",
+        "serverData": [
+          "steam"
+        ]
+      },
+      {
+        "GameId": 31718,
+        "GameName": "延禧宮",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 14025,
+        "GameName": "逐鹿三國",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      },
+      {
+        "GameId": 31733,
+        "GameName": "人中之龍 ONLINE",
+        "serverData": [
+          "Android",
+          "IOS"
+        ]
+      }
+    ],
+    "changeGameData": [
+      {
+        "reduceServerData": [],
+        "addServerData": [
+          {
+            "name": "人在天涯",
+            "id": 31753
+          },
+          {
+            "name": "紛飛紅雪",
+            "id": 31754
+          }
+        ],
+        "gameName": "天涯明月刀"
+      },
+      {
+        "reduceServerData": [],
+        "addServerData": {
+          "4": {
+            "name": "精靈寶可夢 Let\\\\\\'s Go！皮卡丘",
+            "id": 31712
+          }
+        },
+        "gameName": "任天堂"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+.page-top-toolbar {
+    padding: 20px 0;
+    margin: 0 20px;
+    height: 80px;
+    border-bottom: 1px solid #ddd
+}
+
+.tool-button {
+    border: 1px solid #ddd;
+    height: 40px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    padding: 10px 15px
+}
+
+.search-control {
+    width: 200px;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 0 20px;
+    height: 40px;
+    border-radius: 20px
+}
+
+.search-button {
+    display: inline-block;
+    background: #3e77ae;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    color: #fff;
+    outline: none;
+    position: relative;
+    border: 0
+}
+
+.search-button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px
+}
+
+.chosen-select {
+    width: 150px;
+    display: inline-block;
+}

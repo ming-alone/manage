@@ -1,0 +1,1 @@
+define("index",["jquery"],function(require,exports,module){"use strict";require("jquery");var n={init:function(){var n=window.location.pathname.split("/"),i=n[1]+"/"+n[2]+"/"+n[3]+"/"+n[3]+".js";require.async(seajs.data.vars._PASSPORT_PATH+i,function(n){n.init()})}};module.exports=n});

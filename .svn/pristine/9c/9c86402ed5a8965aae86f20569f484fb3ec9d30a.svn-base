@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="http://images.i7391.com/images/i7391.ico" />
+        <title>后台管理</title>
+        <link rel="stylesheet" href="//jscdn.i7391.com/zui/1.8.1/zui.min.css">
+        <link rel="stylesheet" href="css/zui.tabs.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+
+        <div id="ajax_loading" class="hidden">
+            <i class="icon icon-spin icon-spinner-snake icon-3x"></i>
+        </div>
+        <header class="page-topbar">
+            <div class="navbar-minimalize pull-left"></div>
+            <ul class="nav navbar-top-links pull-right">
+                <li>
+                    <img class="img-circle" src="static/images/pic-50x50_01.jpg" alt="">
+                    <span id="userName"></span>
+                </li>
+                <li>
+                    <a href="javascript:;" id="wxLogout">
+                        <i class="icon icon-signout"></i>
+                        <span>登出</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="page-container" id="wrapper">
+            <aside class="navbar-static-side">
+                <nav class="menu menu-static-scroll" id="leftMenu" data-ride="menu">
+                    <ul id="treeMenu" class="menu-list-static">
+                    </ul>
+                </nav>
+            </aside>
+            <section class="main-content">
+                <div id="tabs" class="tabs">
+                    <nav class="tabs-navbar tabs-nav-static"></nav>
+                    <div class="tabs-container tabs-container-static" id="tabPages"></div>
+                </div>
+            </section>
+        </div>
+
+        <script type="text/javascript" src="//jscdn.i7391.com/seajs/2.3.0/sea.js"></script>
+        <script type="text/javascript" src="/js/seajs-cfg.js"></script>
+        <script>seajs.use('main.js', function (m) {m.init('index.js');});</script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/x-icon" href="http://images.i7391.com/images/i7391.ico" />
+        <link rel="stylesheet" href="//jscdn.i7391.com/zui/1.8.0/zui.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/lib/datagrid/zui.datagrid.min.css">
+        <link rel="stylesheet" href="//cdn.bootcss.com/zui/1.8.1/lib/uploader/zui.uploader.min.css">
+        <link rel="stylesheet" href="/css/public.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="ajax_loading" class="hidden">
+            <i class="icon icon-spin icon-spinner-snake icon-3x"></i>
+        </div>
+        <div class="container-fluid">
+            <div id="datagridPageExample" class="datagrid">
+                <header class="clearfix">
+                    <div class="btn-group">
+                        <a href="/i7391_CMS/goods/goods_add" class="power btn" type="button">
+                            <i class="icon icon-plus"></i>推薦商品新增
+                        </a>
+                        <a href="/i7391_CMS/goods/goods_detele" class="power btn" type="button">
+                            <i class="icon icon-minus"></i>推薦商品刪除
+                        </a>
+                    </div>
+                    <div class="input-control search-box search-box-circle has-icon-left has-icon-right pull-right" id="searchboxExample" style="margin-bottom: 10px; max-width: 300px">
+                        <input id="inputSearchExample" type="search" class="form-control search-input" placeholder="搜尋">
+                        <label for="inputSearchExample" class="input-control-icon-left search-icon">
+                            <i class="icon icon-search"></i>
+                        </label>
+                        <a href="#" class="input-control-icon-right search-clear-btn">
+                            <i class="icon icon-remove"></i>
+                        </a>
+                    </div>
+                </header>
+                <div class="datagrid-container"></div>
+                <div class="pager block"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="//jscdn.i7391.com/seajs/2.3.0/sea.js"></script>
+        <script type="text/javascript" src="/js/seajs-cfg.js"></script>
+        <script>seajs.use('main', function (m) {m.init();});</script>
+    </body>
+</html>

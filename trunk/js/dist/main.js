@@ -1,0 +1,1 @@
+define("main",[],function(require,exports,module){"use strict";var i={init:function(i){if("string"!=typeof i){i="";var n=window.location.pathname.split("/");for(var t in n)"page"!==n[t]&&(i+=void 0!==n[t]&&""!==n[t]?n[t]+"/":"");".html"===(i=i.slice(0,-1)).slice(-5)&&(i=i.slice(0,-5))}require.async(i,function(i){i.init()})}};module.exports=i});

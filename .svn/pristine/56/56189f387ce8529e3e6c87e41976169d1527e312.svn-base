@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="http://images.i7391.com/images/i7391.ico" /> 
+    <title>后台管理</title>
+    <link rel="stylesheet" href="//jscdn.i7391.com/zui/1.8.0/zui.min.css">
+    <link rel="stylesheet" href="css/zui.tabs.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+    <div id="ajax_loading" class="hidden">
+        <i class="icon icon-spin icon-spinner-snake icon-3x"></i>
+    </div>
+    <header class="header-navbar">
+        <div class="navbar navbar-inverse navbar-fixed-top bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a id="headerlogo" class="navbar-brand" href="#">後台管理</a>
+                </div>
+                <div class="navbar-collapse collapse"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2">
+                <nav class="menu" data-ride="menu">
+                    <ul id="treeMenu" class="tree tree-menu">
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-10">
+                <div class="main-content">
+                    <div class="tabs tabs-justified" id="tabs">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" id="wxLogout">退出登录</button>
+    </div>
+    <script type="text/javascript" src="//jscdn.i7391.com/seajs/2.3.0/sea.js"></script>
+    <script src="manageweb/v1/seajs-cfg.js"></script>
+    <script>
+        seajs.use('test', function (m) {
+            m.init();
+        });
+    </script>
+</body>
+</html>
